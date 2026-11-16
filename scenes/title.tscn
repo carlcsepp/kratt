@@ -36,7 +36,7 @@ offset_top = 166.0
 offset_right = 1280.0
 offset_bottom = 196.0
 theme_override_font_sizes/font_size = 22
-text = "An idle game where idling gets you killed."
+text = "A deckbuilding game where being idle gets you killed."
 horizontal_alignment = 1
 
 [node name="Proto" type="Label" parent="." unique_id=388925790]
@@ -70,4 +70,4 @@ offset_top = 580.0
 offset_right = 750.0
 offset_bottom = 632.0
 theme_override_font_sizes/font_size = 20
-text = "Start a run"
+text = "Start"
