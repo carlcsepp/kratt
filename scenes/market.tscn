@@ -1,0 +1,134 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/market.gd" id="1_market"]
+
+[node name="Market" type="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_market")
+
+[node name="Bg" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.945, 0.925, 0.875, 1.0)
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 0
+offset_left = 0.0
+offset_top = 14.0
+offset_right = 1280.0
+offset_bottom = 58.0
+text = "Night market"
+theme_override_font_sizes/font_size = 30
+horizontal_alignment = 1
+
+[node name="Stats" type="Label" parent="."]
+layout_mode = 0
+offset_left = 0.0
+offset_top = 60.0
+offset_right = 1280.0
+offset_bottom = 88.0
+text = ""
+theme_override_font_sizes/font_size = 16
+horizontal_alignment = 1
+
+[node name="OffersTitle" type="Label" parent="."]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 104.0
+offset_right = 620.0
+offset_bottom = 132.0
+text = "Buy task cards (they go into your deck)"
+theme_override_font_sizes/font_size = 18
+
+[node name="Offers" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 136.0
+offset_right = 620.0
+offset_bottom = 330.0
+theme_override_constants/separation = 6
+
+[node name="CharmsTitle" type="Label" parent="."]
+layout_mode = 0
+offset_left = 660.0
+offset_top = 104.0
+offset_right = 1240.0
+offset_bottom = 132.0
+text = "Buy a folk charm (keeps working for the rest of the run)"
+theme_override_font_sizes/font_size = 18
+
+[node name="Charms" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 660.0
+offset_top = 136.0
+offset_right = 1240.0
+offset_bottom = 250.0
+theme_override_constants/separation = 6
+
+[node name="OwnedCharms" type="Label" parent="."]
+layout_mode = 0
+offset_left = 660.0
+offset_top = 258.0
+offset_right = 1240.0
+offset_bottom = 330.0
+text = "Your charms: none yet"
+theme_override_font_sizes/font_size = 14
+autowrap_mode = 3
+
+[node name="DeckTitle" type="Label" parent="."]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 340.0
+offset_right = 1240.0
+offset_bottom = 366.0
+text = "Your deck (a thin deck runs out before dusk, burn only what you don't want)"
+theme_override_font_sizes/font_size = 18
+
+[node name="DeckInfo" type="Label" parent="."]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 368.0
+offset_right = 1240.0
+offset_bottom = 394.0
+text = ""
+theme_override_font_sizes/font_size = 15
+theme_override_colors/font_color = Color(0.91, 0.35, 0.05, 1.0)
+
+[node name="Deck" type="GridContainer" parent="."]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 400.0
+offset_right = 1240.0
+offset_bottom = 636.0
+columns = 2
+theme_override_constants/h_separation = 24
+theme_override_constants/v_separation = 4
+
+[node name="Message" type="Label" parent="."]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 650.0
+offset_right = 860.0
+offset_bottom = 704.0
+text = ""
+theme_override_font_sizes/font_size = 15
+autowrap_mode = 3
+
+[node name="StartButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 900.0
+offset_top = 648.0
+offset_right = 1240.0
+offset_bottom = 700.0
+text = "Start the next day"
+theme_override_font_sizes/font_size = 18

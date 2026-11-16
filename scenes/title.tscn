@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://d0y2kvf6pbn8"]
+
+[ext_resource type="Script" uid="uid://c2ges4ywvs7yp" path="res://scripts/title.gd" id="1_title"]
+
+[node name="Title" type="Control" unique_id=2028181103]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_title")
+
+[node name="Bg" type="ColorRect" parent="." unique_id=1835192431]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.945, 0.925, 0.875, 1)
+
+[node name="Logo" type="Label" parent="." unique_id=1678907047]
+layout_mode = 0
+offset_top = 60.0
+offset_right = 1280.0
+offset_bottom = 160.0
+theme_override_font_sizes/font_size = 84
+text = "KRATT"
+horizontal_alignment = 1
+
+[node name="Pitch" type="Label" parent="." unique_id=2000687654]
+layout_mode = 0
+offset_top = 166.0
+offset_right = 1280.0
+offset_bottom = 196.0
+theme_override_font_sizes/font_size = 22
+text = "An idle game where idling gets you killed."
+horizontal_alignment = 1
+
+[node name="Proto" type="Label" parent="." unique_id=388925790]
+layout_mode = 0
+offset_top = 198.0
+offset_right = 1280.0
+offset_bottom = 222.0
+theme_override_colors/font_color = Color(0.55, 0.53, 0.5, 1)
+theme_override_font_sizes/font_size = 14
+text = "Low-fi prototype of the gameplay loop"
+horizontal_alignment = 1
+
+[node name="HowTo" type="Label" parent="." unique_id=287647207]
+layout_mode = 0
+offset_left = 290.0
+offset_top = 244.0
+offset_right = 990.0
+offset_bottom = 560.0
+theme_override_font_sizes/font_size = 16
+text = "- Each day lasts 2 minutes. Drag task cards from your hand onto the work spot they name, in the barn or out on the farmstead.
+- The kratt holds 3 orders at most and works through them on its own. It gets 15% faster at every job it repeats, so it needs more and more work.
+- With nothing to do, its idle fuse burns. When the fuse runs out, it smashes a building and its cards. The third rampage kills you.
+- The pastor visits once a day (see the timeline). Send the kratt somewhere far, or disguise it as a scarecrow, which stops it working.
+- Pay the rent at dusk, then buy cards and charms at the night market. After day 4, order the ladder of bread."
+autowrap_mode = 3
+
+[node name="StartButton" type="Button" parent="." unique_id=1305383899]
+layout_mode = 0
+offset_left = 530.0
+offset_top = 580.0
+offset_right = 750.0
+offset_bottom = 632.0
+theme_override_font_sizes/font_size = 20
+text = "Start a run"
