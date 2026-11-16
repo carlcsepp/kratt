@@ -1,6 +1,6 @@
 extends Control
 ## The night market between days: buy task cards and folk charms, burn cards you don't want.
-## A deck that is too thin runs out before dusk, and the kratt idles. The deck info shows
+## A deck that is too thin runs out before dusk, and the kratt idles. The deck info shows on top
 ## roughly how long your cards keep it busy now that it has learned some jobs.
 
 const Balance = preload("res://scripts/balance.gd")
